@@ -1,0 +1,35 @@
+.body{
+    width:100vw;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    background-color: #ffbb00;
+    overflow: auto;
+}
+.flexbox{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(216, 179, 142);
+}
+.rowAlign{
+    flex-flow: row nowrap;
+    padding:auto;
+}
+.colAlign{
+    flex-flow:column nowrap;
+    padding:auto;
+}
+.roundContainer{
+    width: "50px";
+    height: "50px";
+    border-radius: "50%";
+    position: fixed;
+}
+.profileButton{
+    top:5px;
+    left:5px;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
