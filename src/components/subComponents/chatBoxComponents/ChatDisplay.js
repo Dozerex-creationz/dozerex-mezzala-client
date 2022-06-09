@@ -26,7 +26,7 @@ const renderDisp = (room, messages, socket, props) => {
             sx={{ backgroundColor: "#e0ce7e", padding: "2rem" }}
             elevation={6}
           >
-            Click on a Classroom to proceed
+            Click on a Classroom to proceed, if no rooms exists....try joining "Welcome Friends"
           </Paper>
         </Backdrop>
       </>
