@@ -68,6 +68,22 @@ const search = (room, setRoom, user, dispatch, socket) => {
       </Box>
     </>
   );}
+    return (
+    <>
+      <Box
+        sx={{
+          width: "100%",
+          margin: "1vh",
+          display: "inline-flex",
+          justifyContent: "space-around",
+          alignItems: "center",
+          display: "none",
+        }}
+      >
+        <CustomButton name={"Join"} variant={"warning"} onClick={() => {}} />
+      </Box>
+    </>
+  );
 };
 const TopBar = (props) => {
   const [room, setRoom] = useState("");
