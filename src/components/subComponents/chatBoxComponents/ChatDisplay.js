@@ -45,7 +45,7 @@ const renderDisp = (room, messages, socket, props) => {
             marginTop: "1vh",
           }}
         >
-          <ChatTopBar setClick={props.setClick} />
+          <ChatTopBar setClick={props.setClick} setScroll={props.setScroll}/>
         </Box>
         <div style={{ overflow: "auto", width: "100%", height: "100%" }}>
           <List
@@ -56,7 +56,7 @@ const renderDisp = (room, messages, socket, props) => {
               height: "70%",
               display: "flex",
               flexFlow: "column-reverse",
-              overflow: props.scroll,
+              overflow: "auto",
               paddingTop: "12vh",
             }}
           >
@@ -64,7 +64,7 @@ const renderDisp = (room, messages, socket, props) => {
               .slice()
               .reverse()
               .map((msg) => {
-                return <Message msg={msg} setScroll={props.setScroll}/>;
+                return <Message msg={msg} />;
               })}
           </List>
         </div>
