@@ -56,7 +56,7 @@ const renderDisp = (room, messages, socket, props) => {
               height: "70%",
               display: "flex",
               flexFlow: "column-reverse",
-              overflow: "scroll",
+              overflow: props.scroll,
               paddingTop: "12vh",
             }}
           >
@@ -64,7 +64,7 @@ const renderDisp = (room, messages, socket, props) => {
               .slice()
               .reverse()
               .map((msg) => {
-                return <Message msg={msg} />;
+                return <Message msg={msg} setScroll={props.setScroll}/>;
               })}
           </List>
         </div>
