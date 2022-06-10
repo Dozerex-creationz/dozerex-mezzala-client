@@ -54,7 +54,7 @@ const renderDisp = (room, messages, socket, props) => {
               bottom: "10vh",
               marginTop:"5vh",
               width: "100%",
-              height: "90%",
+              height: "60%",
               display: "flex",
               flexFlow: "column-reverse",
               overflow: "auto",
