@@ -28,11 +28,12 @@ const ChatTopBar = (props) => {
     <Toolbar
       sx={{
         backgroundColor: "#257C44",
-        width: "100%",
-        margin: "0",
-        padding: "0",
+        width: "95%",
+        margin: "2%",
+        padding: "1%",
         zIndex: 1,
         color: "white",
+        borderRadius:"1%"
       }}
     >
       <Typography variant="h6" component="div">
