@@ -114,7 +114,7 @@ const TopBar = (props) => {
       </Box>
       <Box
         sx={{
-          height: "15vh",
+          height: "10vh",
           display: "flex ",
           justifyContent: "center",
         }}
