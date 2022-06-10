@@ -11,6 +11,7 @@ const ChatItem = (props) => {
   const room = props.room;
   const openChat = (roomName) => {
     if (props.setClick !== null) props.setClick(true);
+    if (props.setScroll !== null) props.setClick("hidden");
     var timeStamp = Date();
     timeStamp += " ";
     axios({
