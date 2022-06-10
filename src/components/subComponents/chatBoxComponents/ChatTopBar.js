@@ -17,7 +17,7 @@ const ChatTopBar = (props) => {
     if (props.setClick !== null) {
       return (
         <Tooltip title={"Go Back to Room list"}>
-          <Button sx={{ alignContent: "center" }} onClick={() => callProps()}>
+          <Button sx={{ alignContent: "center", backgroundColor: "#257C44"}} onClick={() => callProps()}>
             <ArrowBackOutlinedIcon />
           </Button>
         </Tooltip>
