@@ -8,13 +8,13 @@ const ChatWindow = (props) => {
     <List
       sx={{
         background: "transparent",
-        overflow: "auto",
+        overflow: props.scroll,
         width: props.width,
         height: "90%",
       }}
     >
       {rooms.map((room) => {
-        return <ChatItem room={room} setClick={props.setClick} />;
+        return <ChatItem room={room} setClick={props.setClick} setScroll={props.setScroll}/>;
       })}
     </List>
   );
