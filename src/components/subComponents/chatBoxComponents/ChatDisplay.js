@@ -53,6 +53,7 @@ const renderDisp = (room, messages, socket, props) => {
               position: "absolute",
               bottom: "10vh",
               marginTop:"5vh",
+              marginLeft:"3vh",
               width: "100%",
               height: "60%",
               display: "flex",
