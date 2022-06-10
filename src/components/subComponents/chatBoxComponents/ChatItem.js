@@ -24,7 +24,7 @@ const ChatItem = (props) => {
   };
   return (
     <ListItem sx={{ width: "100%" }}>
-      <CardActionArea
+      <CardActionArea sx={{ width: "100%" }}
         onClick={() => {
           openChat(room.roomName);
         }}
@@ -36,6 +36,7 @@ const ChatItem = (props) => {
                 {room.roomName.slice(0, 1).toUpperCase()}
               </Avatar>
             }
+            sx={{ width: "100%" }}
             title={room.roomName}
           />
         </Card>
