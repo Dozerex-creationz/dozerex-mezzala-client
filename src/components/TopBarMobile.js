@@ -74,7 +74,6 @@ const search = (room, setRoom, user, dispatch, socket) => {
         sx={{
           width: "100%",
           margin: "1vh",
-          display: "inline-flex",
           justifyContent: "space-around",
           alignItems: "center",
           display: "none",
