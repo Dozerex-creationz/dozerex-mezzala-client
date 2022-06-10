@@ -12,8 +12,8 @@ const ChatTopBar = (props) => {
   const chats = useSelector((state) => state.room);
   const roomName = chats.roomName;
   const callProps = () => {
-    console.log("hi im call Props");
     props.setClick(false);
+    if (props.setScroll !== null) props.setScroll("auto");
   };
   const renderBack = () => {
     if (props.setClick !== null) {
