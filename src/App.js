@@ -22,7 +22,7 @@ const App = () => {
   }
   return (
     <>
-      <div className="body flexbox colAlign">
+      <div className="bgMain body flexbox colAlign">
         <BrowserView className="body flexbox colAlign">
           <TopBar socket={socket} />
           <ChatBox socket={socket} />
