@@ -52,8 +52,9 @@ const renderDisp = (room, messages, socket, props) => {
             sx={{
               position: "absolute",
               bottom: "10vh",
+              marginTop:"5vh",
               width: "100%",
-              height: "70%",
+              height: "90%",
               display: "flex",
               flexFlow: "column-reverse",
               overflow: "auto",
