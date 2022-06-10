@@ -14,6 +14,7 @@ const ChatBoxMobile = (props) => {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(true);
   const [click, setClick] = useState(false);
+const [scroll, setScroll] = useState("auto");
   const handleClose = () => {};
   const checkForLocal = () => {
     var credential = JSON.parse(localStorage.getItem("credential"));
@@ -136,8 +137,9 @@ const ChatBoxMobile = (props) => {
             flipDirection="horizontal"
             containerStyle={{ width: "100%", overflow: "auto" }}
           >
-            <ChatWindow setClick={setClick} width={"100%"} />
+            <ChatWindow setScroll={setScroll} scroll={scroll} setClick={setClick} width={"100%"} />
             <ChatDisplay
+              setScroll={setScroll}
               socket={props.socket}
               width={"100%"}
               setClick={setClick}
