@@ -10,8 +10,8 @@ const ChatTopBar = (props) => {
   const chats = useSelector((state) => state.room);
   const roomName = chats.roomName;
   const callProps = () => {
+    console.log("hi im call Props");
     props.setClick(false);
-    if (props.setScroll !== null) props.setScroll("auto");
   };
   const renderBack = () => {
     if (props.setClick !== null) {
@@ -27,11 +27,12 @@ const ChatTopBar = (props) => {
   return (
     <Toolbar
       sx={{
-        backgroundColor: "#4280eb",
+        backgroundColor: "#257C44",
         width: "100%",
         margin: "0",
         padding: "0",
         zIndex: 1,
+        color: "white",
       }}
     >
       <Typography variant="h6" component="div">
