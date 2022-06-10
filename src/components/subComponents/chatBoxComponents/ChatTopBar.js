@@ -12,6 +12,7 @@ const ChatTopBar = (props) => {
   const callProps = () => {
     console.log("hi im call Props");
     props.setClick(false);
+    props.setScroll("auto");
   };
   const renderBack = () => {
     if (props.setClick !== null) {
