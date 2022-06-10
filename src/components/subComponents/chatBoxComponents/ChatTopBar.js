@@ -3,8 +3,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Button from "@mui/material/Button";
-import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
-import MarkEmailReadIcon from "@mui/icons-material/MarkEmailRead";
 import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import { useSelector } from "react-redux";
 import Tooltip from "@mui/material/Tooltip";
