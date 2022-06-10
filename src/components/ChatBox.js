@@ -119,9 +119,9 @@ const ChatBox = (props) => {
             overflow: "hidden",
           }}
         >
-          <ChatWindow width={"33%"} setClick={null} />
+          <ChatWindow setScroll={null} scroll={"auto"} width={"33%"} setClick={null} />
           <Divider orientation="vertical" sx={{ margin: "2vh" }}></Divider>
-          <ChatDisplay socket={props.socket} width={"66%"} setClick={null} />
+          <ChatDisplay setScroll={null} socket={props.socket} width={"66%"} setClick={null} />
         </Box>
         <div
           style={{
