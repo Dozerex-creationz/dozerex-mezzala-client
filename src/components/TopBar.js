@@ -25,6 +25,7 @@ const addUser = (room, setRoom, user, dispatch, socket) => {
   }
 };
 const search = (room, setRoom, user, dispatch, socket) => {
+  if (user.userName !== "No User") {
   return (
     <>
       <Box
@@ -66,7 +67,7 @@ const search = (room, setRoom, user, dispatch, socket) => {
         />
       </Box>
     </>
-  );
+  );}
 };
 const TopBar = (props) => {
   const [room, setRoom] = useState("");
