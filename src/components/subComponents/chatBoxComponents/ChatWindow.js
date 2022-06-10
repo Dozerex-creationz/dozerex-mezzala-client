@@ -35,7 +35,7 @@ const ChatWindow = (props) => {
         background: "transparent",
         overflow: props.scroll,
         width: props.width,
-        height: "35vh",
+        height: "90%",
       }}
     >
       {rooms.map((room) => {
