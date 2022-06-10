@@ -15,18 +15,13 @@ const ChatBoxMobile = (props) => {
   const [open, setOpen] = useState(true);
   const [click, setClick] = useState(false);
   const [scroll, setScroll] = useState("auto");
-  useEffect(()=>{
-  console.log(scroll)
-  },[scroll])
   const handleClose = () => {};
   const checkForLocal = () => {
     var credential = JSON.parse(localStorage.getItem("credential"));
     if (credential === null) {
       return true;
     } else {
-      console.log("HI it checks for local");
       credential = credential.data;
-      console.log(credential);
       return false;
     }
   };
