@@ -52,16 +52,6 @@ const ChatTopBar = (props) => {
           aria-label="outlined primary button group"
         >
           {renderBack()}
-          <Tooltip title={"Mail the room Admin"}>
-            <Button sx={{ alignContent: "center" }}>
-              <MarkEmailReadIcon />
-            </Button>
-          </Tooltip>
-          <Tooltip title={"Ping all members of the group"}>
-            <Button sx={{ alignContent: "center" }}>
-              <NotificationsActiveIcon />
-            </Button>
-          </Tooltip>
         </ButtonGroup>
       </span>
     </Toolbar>
