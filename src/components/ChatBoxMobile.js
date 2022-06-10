@@ -14,7 +14,10 @@ const ChatBoxMobile = (props) => {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(true);
   const [click, setClick] = useState(false);
-const [scroll, setScroll] = useState("auto");
+  const [scroll, setScroll] = useState("auto");
+  useEffect(()=>{
+  console.log(scroll)
+  },[scroll])
   const handleClose = () => {};
   const checkForLocal = () => {
     var credential = JSON.parse(localStorage.getItem("credential"));
